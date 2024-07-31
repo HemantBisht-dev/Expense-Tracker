@@ -1,0 +1,86 @@
+table.expenseTable {
+  padding: 0 30px 30px 30px;
+  width: 60%;
+  text-align: center;
+  align-self: flex-start;
+  /* border-collapse: collapse; */
+}
+table.expenseTable td, table.expenseTable th {
+  border: 2px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.expenseTable tbody td {
+  font-size: 15px;
+}
+
+table.expenseTable thead th {
+  width: 34%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #393939;
+  text-align: center;
+}
+.expenseTable select {
+  font: inherit;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+table.expenseTable tfoot td {
+  font-weight: bold;
+}
+
+
+/* amount col */
+
+.amount-column div {
+  display: flex;
+  justify-content: center;
+}
+
+/* .amount-column span {
+  margin-right: 6px;
+} */
+
+.arrow {
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.up-arrow {
+  margin-left: 6px;
+}
+
+.up-arrow:active {
+  transform: translateY(-2px);
+}
+
+.down-arrow {
+  margin-left: 6px;
+}
+
+.down-arrow:active {
+  transform: translateY(2px);
+}
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+  
+  table.expenseTable {
+    max-width: 480px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Styles for tablet devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  
+  table.expenseTable {
+    max-width: 580px;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
